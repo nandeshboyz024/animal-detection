@@ -21,7 +21,8 @@
     "react-dom": "^18",
     "react-magic-dropzone": "^1.0.1",
     "react-router-dom": "^6.21.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -34,12 +35,15 @@
     "tailwindcss": "^3.3.0"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
   }
-
 }
