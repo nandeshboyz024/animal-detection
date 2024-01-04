@@ -39,7 +39,7 @@ const Detection = () => {
                                     ) : (
                                         <div>
                                             <div className={styles['center-div']}>
-                                                <Image src='/imgs/upload.png' alt="upload" width={50} height={50} srcSet=''/>
+                                                <Image src='/imgs/upload.png' alt="upload" width={50} height={50}/>
                                             </div>
                                             <div style={{ display: 'block' }}>
                                                 <p style={{fontSize:'20px'}}>Drag/drop files over here</p>
@@ -63,6 +63,7 @@ const Detection = () => {
                                         height={dimensions.height} 
                                         className={styles["image-canvas"]}
                                         ref={imageRef} 
+                                        alt='image-view'
                                     />
                                     <canvas 
                                         width={dimensions.width}

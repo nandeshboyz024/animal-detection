@@ -2,7 +2,6 @@ import React from 'react'
 import Heading from '../../../components/animal-detection/heading'
 import styles from '../../../components/animal-detection/global.module.css'
 import Link from 'next/link'
-
 export default function Explore() {
   return (
     <div>
@@ -40,7 +39,7 @@ export default function Explore() {
                         <div className='text-center'>
                             <h4>Wildlife Security Guards</h4>
                         </div>
-                        <p> Stop animals from going where they shouldn't and make sure our special places for animals are safe.</p>
+                        <p> Stop animals from going where they should not and make sure our special places for animals are safe.</p>
                     </div>
                 </div>
                 <div className={'col-lg-4 '+styles['center-div']} style={{height:'160px'}}>
@@ -56,7 +55,7 @@ export default function Explore() {
                         <div className='text-center'>
                             <h4>Check Happiness</h4>
                         </div>
-                        <p> Watch over animals in zoos or labs and make sure they're happy and healthy.</p>
+                        <p> Watch over animals in zoos or labs and make sure they are happy and healthy.</p>
                     </div>
                 </div>
             </div>
