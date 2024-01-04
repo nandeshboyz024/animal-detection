@@ -20,7 +20,7 @@ const Index = () => {
     }}>
       {/* {isBrowser && <About/>} */}
        <h1 style={{color:'black',textDecoration:'underline'}}>For go to homepage</h1>
-       <h3>Append <i>"/emotion-detection"</i></h3>
+       <h3>Append <i>&quot;/emotion-detection&quot;</i></h3>
        <h5>in the current working link</h5>
     </div>
   );

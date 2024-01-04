@@ -12,10 +12,10 @@ export default function Home() {
             <div className='row' style={{margin:'0'}}>
                 <div className='col-lg-6'>
                     <p style={{textAlign:'justify',fontSize:'20px'}}>
-                        Welcome to our wildlife haven! Here, you'll discover a diverse array of inhabitants, including birds, dogs, cats, cows, sheeps, bears, elephants, horses, zebras, giraffes and humans, all coexisting in harmony. Explore the wonders of our jungle and embrace the beauty of its varied species.
+                        Welcome to our wildlife haven! Here, you all discover a diverse array of inhabitants, including birds, dogs, cats, cows, sheeps, bears, elephants, horses, zebras, giraffes and humans, all coexisting in harmony. Explore the wonders of our jungle and embrace the beauty of its varied species.
                     </p>
                     <p style={{textAlign:'justify',fontSize:'20px'}}>
-                        Are you feeling overwhelmed trying to identify animals? No need to worry! You're in the right place. Let AI be your guide as we explore the wonders of our jungle together.
+                        Are you feeling overwhelmed trying to identify animals? No need to worry! You are in the right place. Let AI be your guide as we explore the wonders of our jungle together.
                     </p>
                     <div style={{display:'flex',justifyContent:'space-around',margin:'20px'}}>
                         <Link href="/animal-detection/detect" style={{textDecoration:'none'}}>
