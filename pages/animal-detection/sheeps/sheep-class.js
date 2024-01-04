@@ -12,7 +12,7 @@ export default function SheepClass() {
             <div style={{display:'flex'}}>
                 <div style={{width:'5%',marginTop:'140px',textAlign:'center'}}>
                     <button className={styles.arrow} id="prev" onClick={movePrev}>
-                        <Image src="/imgs/left-arrow.png" alt="left-arrow"  width={20}/>
+                        <Image src="/imgs/left-arrow.png" alt="left-arrow"  width={20} height={20}/>
                     </button>
                 </div>
                 <div style={{width:'90%'}}>
@@ -73,7 +73,7 @@ export default function SheepClass() {
                 </div>
                 <div style={{width:'5%',marginTop:'140px',textAlign:'center'}}>
                     <button className={styles.arrow} id="next" onClick={moveNext}>
-                        <Image src="/imgs/right-arrow.png" alt="right-arrow" width={20}  />
+                        <Image src="/imgs/right-arrow.png" alt="right-arrow" width={20}  height={20}/>
                     </button>
                 </div>
             </div>
