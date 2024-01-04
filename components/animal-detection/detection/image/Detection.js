@@ -6,7 +6,6 @@ import styles from '../../../animal-detection/global.module.css'
 import MagicDropzone from 'react-magic-dropzone';
 import Image from 'next/image';
 
-
 const Detection = () => {
     
     const { model, labels } = useContext(ModelContext);
@@ -35,11 +34,11 @@ const Detection = () => {
                             <MagicDropzone className={styles.dropzone} accept="image/jpeg, image/png, .jpg, .jpeg, .png" multiple={false} onDrop={onDrop}>
                                 <div className={styles['center-div-wrap']}>
                                     {loadedImg ? (
-                                        <Image className={styles['dropzone-image']} src={loadedImg} width="100" alt="drop" />
+                                        <img className={styles['dropzone-image']} src={loadedImg} width="100" alt="drop" />
                                     ) : (
                                         <div>
                                             <div className={styles['center-div']}>
-                                                <Image src='/imgs/upload.png' alt="upload" width={50} height={50}/>
+                                                <Image src='/imgs/upload.png' alt="upload" width={50} height={50} srcSet=''/>
                                             </div>
                                             <div style={{ display: 'block' }}>
                                                 <p style={{fontSize:'20px'}}>Drag/drop files over here</p>
@@ -63,7 +62,7 @@ const Detection = () => {
                                         height={dimensions.height} 
                                         className={styles["image-canvas"]}
                                         ref={imageRef} 
-                                        alt='image-view'
+                                        alt="image view"
                                     />
                                     <canvas 
                                         width={dimensions.width}
