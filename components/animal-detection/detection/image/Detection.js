@@ -4,6 +4,7 @@ import { useDimension } from '../utils/dimension-hook';
 import useDetector from './useDetector';
 import styles from '../../../animal-detection/global.module.css'
 import MagicDropzone from 'react-magic-dropzone';
+import Image from 'next/image';
 
 
 const Detection = () => {
@@ -34,11 +35,11 @@ const Detection = () => {
                             <MagicDropzone className={styles.dropzone} accept="image/jpeg, image/png, .jpg, .jpeg, .png" multiple={false} onDrop={onDrop}>
                                 <div className={styles['center-div-wrap']}>
                                     {loadedImg ? (
-                                        <img className={styles['dropzone-image']} src={loadedImg} width="100" alt="drop" />
+                                        <Image className={styles['dropzone-image']} src={loadedImg} width="100" alt="drop" />
                                     ) : (
                                         <div>
                                             <div className={styles['center-div']}>
-                                                <img src='/imgs/upload.png' alt="upload" width={50} height={50} srcSet=''/>
+                                                <Image src='/imgs/upload.png' alt="upload" width={50} height={50} srcSet=''/>
                                             </div>
                                             <div style={{ display: 'block' }}>
                                                 <p style={{fontSize:'20px'}}>Drag/drop files over here</p>
@@ -56,7 +57,7 @@ const Detection = () => {
                                 height: `${dimensions.height}px`,
                             }}>
                                 <div className={styles["image-container"]}>
-                                    <img 
+                                    <Image 
                                         src={loadedImg} 
                                         width={dimensions.width}
                                         height={dimensions.height} 

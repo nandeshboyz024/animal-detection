@@ -2,6 +2,7 @@ import React from 'react'
 import Heading from '../../../components/animal-detection/heading'
 import styles from '../../../components/animal-detection/global.module.css'
 import Link from 'next/link'
+
 export default function Explore() {
   return (
     <div>

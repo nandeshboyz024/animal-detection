@@ -4,7 +4,7 @@ import MagicDropzone from 'react-magic-dropzone';
 import { useDimension } from '../utils/dimension-hook';
 import styles from '../../../animal-detection/global.module.css'
 import useBoxRenderer from './useBoxRenderer';
-
+import Image from 'next/image';
 
 const Video = () => {
     const { model, labels } = useContext(ModelContext);
@@ -43,7 +43,7 @@ const Video = () => {
                                 ) : (
                                     <div>
                                         <div className={styles["center-div"]}>
-                                            <img src='/imgs/upload.png' width="50" height="50" alt="upload" srcSet=''/>
+                                            <Image src='/imgs/upload.png' width="50" height="50" alt="upload" srcSet=''/>
                                         </div>
                                         <div style={{ display: 'block' }}>
                                             <p style={{fontSize:'20px'}}>Drag/drop files over here</p>
