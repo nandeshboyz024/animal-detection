@@ -5,7 +5,8 @@ import { ModelContext } from '../../../components/animal-detection/detection/con
 import Selector from '../../../components/animal-detection/detection/utils/Selector';
 import LoadingSpinner from '../../../components/animal-detection/detection/utils/LoadingSpinner';
 
-const MODEL_URL = process.env.PUBLIC_URL + '/detection/';
+//const MODEL_URL = process.env.PUBLIC_URL + '/detection/';
+const MODEL_URL =`https://animal-detection-eta.vercel.app/detection/`
 
 const LABELS_URL = MODEL_URL + 'labels.json';
 const MODEL_JSON = MODEL_URL + 'model.json';
