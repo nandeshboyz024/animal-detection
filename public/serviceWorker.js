@@ -1,8 +1,9 @@
 
 export function register(config) {
+  console.log('i am in');
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
-
+    console.log(publicUrl);
     if (publicUrl.origin !== window.location.origin) {
       return;
     }
@@ -16,8 +17,8 @@ export function register(config) {
       )
     );
 
-    const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-
+    //const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+    const swUrl=`https://animal-detection-eta.vercel.app`;
     if (isLocalhost) {
       checkValidServiceWorker(swUrl, config);
       navigator.serviceWorker.ready.then(() => {

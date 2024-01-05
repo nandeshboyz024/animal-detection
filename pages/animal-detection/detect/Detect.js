@@ -6,6 +6,7 @@ import Selector from '../../../components/animal-detection/detection/utils/Selec
 import LoadingSpinner from '../../../components/animal-detection/detection/utils/LoadingSpinner';
 
 const MODEL_URL = process.env.PUBLIC_URL + '/detection/';
+
 const LABELS_URL = MODEL_URL + 'labels.json';
 const MODEL_JSON = MODEL_URL + 'model.json';
 
