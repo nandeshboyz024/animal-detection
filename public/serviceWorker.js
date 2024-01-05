@@ -17,8 +17,8 @@ export function register(config) {
       )
     );
 
-    //const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-    const swUrl=`https://animal-detection-eta.vercel.app`;
+    const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+
     if (isLocalhost) {
       checkValidServiceWorker(swUrl, config);
       navigator.serviceWorker.ready.then(() => {
