@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import 'bootstrap/dist/css/bootstrap.css'
-import * as servicWorker from './serviceWorker';
+import * as servicWorker from '../public/serviceWorker';
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps}/>
 }
