@@ -4,5 +4,8 @@ import * as servicWorker from './serviceWorker';
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps}/>
 }
-servicWorker.unregister();
+
+if (typeof window !== 'undefined') {
+  servicWorker.unregister();
+}
 
